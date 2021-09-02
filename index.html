@@ -64,7 +64,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function myFunction() {
+async function myFunction() {
   var a = document.getElementById("sms").elements[0].value;
   var b = document.getElementById("sms").elements[1].value;
   var c = document.getElementById("sms").elements[2].value;
