@@ -1,0 +1,104 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Twilio Segment SMS UI<span id="selection-marker-1" class="redactor-selection-marker"></span></title> 
+
+    <!--Placeholder for Segment Snippet --> 
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="8MDvCMrEOrC2gTlPDcT58X0Z6ACi9meX";analytics.SNIPPET_VERSION="4.13.2";
+  analytics.load("DDpWuLXJqCoBzDPrmbmyX1F5kW55RtlY");
+  analytics.page();
+  }}();
+</script>
+    <!--Placeholder for Segment Snippet --> 
+    
+</head> 
+<body> 
+<h1>Create SMS Campaign</h1> 
+<p>Overview
+<br><br>
+Please complete the form below or contact support at...</p>  
+    
+<form id="sms" onsubmit="return false">
+     SMS Campaign Name
+     <br>
+    <input name="smsCampaignName" size="80" type="text"/> 
+    <br><br> 
+     SMS Copy 1
+     <br>
+    <input name="smsCopy1" size="80" type="text"/> 
+    <br><br> 
+     SMS Copy 2
+     <br>
+    <input name="smsCopy2" size="80" type="text"/> 
+   <br><br> 
+    GIF URL
+     <br>
+    <input id="phone" gifURL="" size="81" type="text"/> 
+    <br><br> 
+    Start Date
+     <br>
+    <input id="startDate" required="" size="81" type="text"/> 
+    <br><br> 
+    Time of Day
+    <br>
+    <input id="tineOfDay" required="" size="81" type="text"/> 
+    <br><br><br>
+    Send a test
+    <br><br>
+     Test Phone Number
+    <br>
+    <input id="testPhoneNumber" required="" size="81" type="text"/> 
+    <br><br>
+     Test First Name
+    <br>
+    <input id="testFIrstName" testFirstName="" size="81" type="text"/> 
+    <br><br> 
+</form> 
+    
+<script>
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function myFunction() {
+  var a = document.getElementById("sms").elements[0].value;
+  var b = document.getElementById("sms").elements[1].value;
+  var c = document.getElementById("sms").elements[2].value;
+  var d = document.getElementById("sms").elements[3].value;
+  var e = document.getElementById("sms").elements[8].value;
+  var f = document.getElementById("sms").elements[8].value;
+  var g = document.getElementById("sms").elements[8].value;
+  var h = document.getElementById("sms").elements[8].value;
+
+  analytics.identify(null, {
+  firstName: h,
+  phone: g
+  });  
+
+  await sleep(20000);
+
+  analytics.group(a, {
+  name: a,
+  smsCopyPart1: b,
+  smsCopyPart2: c,
+  gif: d
+  });  
+
+  await sleep(20000);
+  
+  analytics.track("SMS Test", {
+  audience_key: a
+  });
+  
+  for (let i = 0; i < 5; i++) {
+    if (i === 3)
+      await sleep(20000);
+  }
+}
+</script>
+
+</body> 
+</html>
