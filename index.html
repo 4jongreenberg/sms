@@ -79,7 +79,7 @@ async function myFunction() {
   phone: g
   });  
 
-  await sleep(2000);
+  await sleep(20000);
 
   analytics.group(a, {
   name: a,
@@ -90,7 +90,7 @@ async function myFunction() {
   deliveryTime: f
   });  
 
-  await sleep(2000);
+  await sleep(20000);
   
   analytics.track("SMS Test", {
   audience_key: a
@@ -98,7 +98,7 @@ async function myFunction() {
   
   for (let i = 0; i < 5; i++) {
     if (i === 3)
-      await sleep(2000);
+      await sleep(20000);
   }
 }
 </script>
