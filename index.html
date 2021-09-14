@@ -25,6 +25,7 @@ Please complete the form below or contact support at...201-822-1458</p>
      SMS Campaign Name
      <br>
     <input name="smsCampaignName" required="" size="80" type="text"/> 
+    <input type="submit" value="Submit">
     <br><br> 
      SMS Copy 1
      <br>
@@ -57,6 +58,7 @@ Please complete the form below or contact support at...201-822-1458</p>
     <input id="testFIrstName" size="81" type="text"/> 
     <br><br> 
     <button onclick="myFunction()">Submit</button>
+    
 </form> 
     
 <script>
@@ -65,7 +67,7 @@ function sleep(ms) {
 }
     
 function display() {
-alert("SMS Campaign Name"+a);
+alert("SMS Campaign Name "+document.getElementById("sms").elements[0].value+" created! SMS test will be sent in 30 seconds followed by and Audience SMS test!");
 }
 
 async function myFunction() {
