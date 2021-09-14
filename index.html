@@ -16,12 +16,12 @@
     
 </head> 
 <body> 
-<h1>Create SMS Campaign .</h1> 
+<h1>Create SMS Campaign *</h1> 
 <p>Overview
 <br><br>
 Please complete the form below or contact support at...201-822-1458</p>  
     
-<form id="sms" onsubmit="return false">
+<form id="sms" onsubmit="display()">
      SMS Campaign Name
      <br>
     <input name="smsCampaignName" required="" size="80" type="text"/> 
@@ -64,9 +64,9 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
     
-//function display() {
-//alert("SMS Campaign Name"+a);
-//}
+function display() {
+alert("SMS Campaign Name"+a);
+}
 
 async function myFunction() {
   var a = document.getElementById("sms").elements[0].value;
