@@ -17,41 +17,44 @@
 </head> 
 <body> 
 <h1>* Create SMS Campaign *</h1> 
-<p>Please complete the form below or contact support at: jgreenberg@twilio.com</p>
+<p>Please complete the form below to create an SMS Campaign in Twilio Segment and trigger a test SMS to yourself.<br>
+   Please follow the text format examples shown to format your SMS Campaign and phone number(s).<br>
+   Please allow for up to 30 seconds after acknowledging the alert for the the SMS test to complete.<br>
+   Any questions or issues please contact Jonathan Greenberg at: jgreenberg@twilio.com</p>
 <br>
  
 <form id="sms" onsubmit="return display()">
-     SMS Campaign Name
+     SMS Campaign Name [Ex: order_delay_storm]
      <br>
     <input name="smsCampaignName" required="" size="80" type="text"/> 
     <br><br> 
-     SMS Copy 1
+     SMS Copy 1 [Ex: 1800Flowers.com Storm Update: ]
      <br>
     <input name="smsCopy1" required="" size="80" type="text"/> 
     <br><br> 
-     SMS Copy 2
+     SMS Copy 2 [Ex: Your order may be delayed due to weather. Please stay safe and we will keep you posted on your order status.]
      <br>
     <input name="smsCopy2" required="" size="80" type="text"/> 
    <br><br> 
-    GIF URL
+    GIF URL [Ex: https://media0.giphy.com/media/R3IxJW14a3QNa/200.gif]
      <br>
     <input id="gifURL" required="" size="81" type="text"/> 
     <br><br> 
-    Start Date
+    Start Date [Ex: 2022-01-01]
      <br>
     <input id="startDate" size="81" type="text"/> 
     <br><br> 
-    Time of Day
+    Time of Day [Ex: 16:00]
     <br>
     <input id="tineOfDay" size="81" type="text"/> 
     <br><br><br>
     Send a test
     <br><br>
-     Test Phone Number
+     Test Phone Number [Ex: +12015551212]
     <br>
     <input id="testPhoneNumber" size="81" type="text"/> 
     <br><br>
-     Test First Name
+     Test First Name [Ex: James]
     <br>
     <input id="testFIrstName" size="81" type="text"/> 
     <br><br> 
