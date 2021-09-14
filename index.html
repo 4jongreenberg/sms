@@ -56,13 +56,16 @@ Please complete the form below or contact support at...201-822-1458</p>
     <br>
     <input id="testFIrstName" size="81" type="text"/> 
     <br><br> 
-    <button onclick="myFunction()";"showMessage()">Submit</button>
-        <span id = "sms"></span> </p>
+    <button onclick="myFunction()";"display()">Submit</button>
 </form> 
     
 <script>
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+    
+function display() {
+alert("SMS Campaign Name"+a+");
 }
 
 async function myFunction() {
