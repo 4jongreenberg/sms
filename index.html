@@ -63,10 +63,6 @@
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-    
-function display() {
-alert("SMS Campaign Name "+document.getElementById("sms").elements[0].value+" created! SMS test will be sent in 30 seconds!");return false;
-}
 
 async function myFunction() {
   var a = document.getElementById("sms").elements[0].value;
@@ -104,6 +100,10 @@ async function myFunction() {
     if (i === 3)
       await sleep(20000);
   }
+}
+    
+function display() {
+alert("SMS Campaign Name "+document.getElementById("sms").elements[0].value+" created! SMS test will be sent in 30 seconds!");return false;
 }
     
 </script>
